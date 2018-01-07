@@ -27,3 +27,4 @@ cp -r vimcdoc-2.1.0/doc/. .vim/doc;
 #    set fileencoding=utf-8
 #    set helplang=cn
 #endif
+cp $(cd "$(dirname "$0")"; pwd)/mootd /etc/motd;
