@@ -16,6 +16,9 @@ git clone https://github.com/Yi-Lyu/MyVimConfig.git ~/MyVimConfig;
 cp -r ~/MyVimConfig/.vim ~;
 cp ~/MyVimConfig/.vimrc ~;
 wget -P ~ https://jaist.dl.sourceforge.net/project/vimcdoc/vimcdoc/vimcdoc-2.1.0.tar.gz; tar -xzf ~/vimcdoc-2.1.0.tar.gz; cp -r ~/vimcdoc-2.1.0/doc/. ~/.vim/doc;
+rm -rf ~/.vim/bundle;
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim;
+
 # " Set Vim help to Chinese and utf-8 encoding
 # if version >= 603
 #    set helplang=cn
