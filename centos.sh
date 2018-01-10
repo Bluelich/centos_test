@@ -12,9 +12,8 @@ yum install -y epel-release ruby git curl file python-setuptools bash-completion
 yum groupinstall 'Development Tools';
 yum remove vim-minimal;
 yum update vim;
-git clone https://github.com/Yi-Lyu/MyVimConfig.git ~/MyVimConfig;
-cp -r ~/MyVimConfig/.vim ~;
-cp ~/MyVimConfig/.vimrc ~;
+cp -r ~/centos/.vim ~;
+cp ~/centos/.vimrc ~;
 wget -P ~ https://jaist.dl.sourceforge.net/project/vimcdoc/vimcdoc/vimcdoc-2.1.0.tar.gz; tar -xzf ~/vimcdoc-2.1.0.tar.gz; cp -r ~/vimcdoc-2.1.0/doc/. ~/.vim/doc;
 rm -rf ~/.vim/bundle;
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim;
